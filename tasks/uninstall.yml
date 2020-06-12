@@ -1,0 +1,12 @@
+---
+- name: Uninstall a package
+  become: yes
+  package:
+    name: jd-gui
+    state: absent
+
+- name: Remove the executable
+  become: yes
+  file:
+    path: /usr/local/bin/jd-gui
+    state: absent

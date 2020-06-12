@@ -1,0 +1,8 @@
+---
+# defaults file for jd_gui
+# Path to a release archive of JD-GUI on a control host or URL to download the
+# archive from.
+jd_gui_package_src: ""
+
+# By default installs the program. Set to "absent" to uninstall.
+jd_gui_state: present

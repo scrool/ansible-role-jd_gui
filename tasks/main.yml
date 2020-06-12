@@ -1,0 +1,9 @@
+---
+# tasks file for jd_gui
+- name: Install tasks of JD-GUI
+  include_tasks: install.yml
+  when: jd_gui_state == "present"
+
+- name: Uninstall tasks of JD-GUI
+  include_tasks: uninstall.yml
+  when: jd_gui_state == "absent"

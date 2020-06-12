@@ -1,0 +1,12 @@
+---
+- name: Install a package
+  become: yes
+  package:
+    name: "{{ jd_gui_package_src }}"
+    state: present
+
+- name: Create the executable
+  become: yes
+  copy:
+    src: jd-gui
+    dest: /usr/local/bin/jd-gui
